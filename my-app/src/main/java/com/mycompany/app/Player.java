@@ -9,7 +9,6 @@ public class Player {
     protected List<Pokemon> pokemons;
 
     public Player(){
-        this.name = "noName";
         this.pokemons = new ArrayList<>();
     }
     public Player(String name){
