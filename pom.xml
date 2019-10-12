@@ -5,24 +5,23 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.mycompany.app.13c</groupId>
-  <artifactId>my-app</artifactId>
+  <artifactId>TAU</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>my-app</name>
-  <!-- FIXME change it to the project's website -->
+  <name>TAU</name>
   <url>http://www.example.com</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.11</maven.compiler.source>
-    <maven.compiler.target>1.11</maven.compiler.target>
+    <maven.compiler.source>1.9</maven.compiler.source>
+    <maven.compiler.target>1.9</maven.compiler.target>
   </properties>
 
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.11</version>
+      <version>4.12</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
