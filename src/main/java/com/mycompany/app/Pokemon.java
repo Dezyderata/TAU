@@ -15,7 +15,6 @@ public class Pokemon {
     public Pokemon(String name, int combatPower, int maxHealthPoints, int attack, int defence, int stamina){
         this.name = name;
         this.combatPower = combatPower;
-        this.combatPower = combatPower;
         this.maxHealthPoints = maxHealthPoints;
         this.attack = attack;
         this.defence = defence;
@@ -68,5 +67,12 @@ public class Pokemon {
 
     public void setStamina(int stamina) {
         this.stamina = stamina;
+    }
+
+    @Override
+    public String toString() {
+        return "Pokemon{" +
+                "name='" + name + '\'' +
+                '}';
     }
 }

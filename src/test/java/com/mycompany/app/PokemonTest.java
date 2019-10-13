@@ -17,7 +17,11 @@ public class PokemonTest {
     public void isPokemonClassWithAttributesPosible(){
         Assert.assertNotNull(new Pokemon("Slaking",4431,233, 290, 166,284));
     }
-
+    @Test
+    public void checkToStringMethod(){
+        Pokemon wishiwashi = new Pokemon("Wishiwashi",0,0, 0, 0,0);
+        Assert.assertEquals("Pokemon{name='Wishiwashi'}", wishiwashi.toString());
+    }
 
 }
 

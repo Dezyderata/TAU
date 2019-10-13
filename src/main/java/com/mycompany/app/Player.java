@@ -30,11 +30,43 @@ public class Player {
                 ++this.level;
                 return "Success!";
             }else{
+                --this.pokeBalls;
                 return "Pokemon has run off!";
             }
         }else{
             return "You out of poke balls!";
         }
+    }
+    public Pokemon selectPokemon(String name) throws IllegalStateException, IllegalArgumentException, NullPointerException {
+        if(name.isEmpty()){
+            throw new IllegalArgumentException("Name is required");
+        }
+        if(this.pokemons.isEmpty()){
+            throw new IllegalStateException("Your pokemon list is empty!");
+        }else{
+            for(int i = 0; i < this.pokemons.size(); i++){
+                if(this.pokemons.get(i).getName().equalsIgnoreCase(name)){
+                    return this.pokemons.get(i);
+                }
+            }
+            throw new NullPointerException("You didn't catch this pokemon");
+        }
+    }
+
+    public List<Pokemon> getPokemons() {
+        return pokemons;
+    }
+
+    public void setPokemons(List<Pokemon> pokemons) {
+        this.pokemons = pokemons;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
     }
 
     public String getName() {
@@ -52,4 +84,5 @@ public class Player {
     public void setPokeBalls(int pokeBalls) {
         this.pokeBalls = pokeBalls;
     }
+
 }

@@ -36,7 +36,7 @@ public class PlayerTest {
         Assert.assertEquals("Pokemon has run off!", player.catchPokemon(slaking));
         Assert.assertEquals(player.pokemons.size(), 0);
         Assert.assertEquals(player.level, 0);
-        Assert.assertEquals(player.pokeBalls, 100);
+        Assert.assertEquals(player.pokeBalls, 99);
     }
 
     @Test
@@ -54,6 +54,32 @@ public class PlayerTest {
         Assert.assertEquals(player.pokemons.size(), 1);
         Assert.assertEquals(player.level, 1);
         Assert.assertEquals(player.pokeBalls, 99);
+
+    }
+    @Test(expected = IllegalStateException.class)
+    public void playerSelectFromEmptyPokemonList(){
+        Player player = new Player();
+        player.selectPokemon("Wishiwashi");
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void playerSelectPokemonWithoutNameFromPokemonList(){
+        Player player = new Player();
+        player.selectPokemon("");
+    }                                                
+    @Test(expected = NullPointerException.class)
+    public void playerSelectPokemonWhichHeDoesNotHave(){
+        Player player = new Player();
+        Pokemon wishiwashi = new Pokemon("Wishiwashi",0,0, 0, 0,0);
+        player.catchPokemon(wishiwashi);
+        player.selectPokemon("Slaking");
+    }
+     @Test
+    public void playerSelectPokemonSuccess(){
+        Player player = new Player();
+        Pokemon wishiwashi = new Pokemon("Wishiwashi",0,0, 0, 0,0);
+        player.catchPokemon(wishiwashi);
+        Assert.assertEquals(player.selectPokemon("Wishiwashi"), wishiwashi);
 
     }
 }
