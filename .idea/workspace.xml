@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="659d9eb5-2d15-40b6-a33f-f906d48947a6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Pokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Pokemon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/PlayerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/PokemonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/PokemonTest.java" afterDir="false" />
     </list>
@@ -20,47 +18,27 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/Pokemon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="75" column="16" lean-forward="true" selection-start-line="75" selection-start-column="16" selection-end-line="75" selection-end-column="19" />
+            <state relative-caret-position="436">
+              <caret line="76" column="5" lean-forward="true" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
               <folding>
-                <element signature="e#647#648#0" expanded="true" />
                 <element signature="e#674#675#0" expanded="true" />
-                <element signature="e#714#715#0" expanded="true" />
-                <element signature="e#746#747#0" expanded="true" />
-                <element signature="e#781#782#0" expanded="true" />
-                <element signature="e#815#816#0" expanded="true" />
-                <element signature="e#866#867#0" expanded="true" />
-                <element signature="e#912#913#0" expanded="true" />
-                <element signature="e#951#952#0" expanded="true" />
-                <element signature="e#989#990#0" expanded="true" />
-                <element signature="e#1048#1049#0" expanded="true" />
-                <element signature="e#1102#1103#0" expanded="true" />
-                <element signature="e#1132#1133#0" expanded="true" />
-                <element signature="e#1161#1162#0" expanded="true" />
-                <element signature="e#1202#1203#0" expanded="true" />
-                <element signature="e#1238#1239#0" expanded="true" />
-                <element signature="e#1269#1270#0" expanded="true" />
-                <element signature="e#1299#1300#0" expanded="true" />
-                <element signature="e#1342#1343#0" expanded="true" />
-                <element signature="e#1380#1381#0" expanded="true" />
-                <element signature="e#1411#1412#0" expanded="true" />
-                <element signature="e#1441#1442#0" expanded="true" />
-                <element signature="e#1484#1485#0" expanded="true" />
-                <element signature="e#1522#1523#0" expanded="true" />
+                <element signature="e#706#707#0" expanded="true" />
+                <element signature="e#741#742#0" expanded="true" />
+                <element signature="e#775#776#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/PokemonTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="405">
+              <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
               <folding>
                 <element signature="e#253#254#0" expanded="true" />
                 <element signature="e#304#305#0" expanded="true" />
@@ -72,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/PlayerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="45" column="40" lean-forward="true" selection-start-line="45" selection-end-line="46" />
+            <state relative-caret-position="373">
+              <caret line="77" column="46" selection-start-line="77" selection-start-column="46" selection-end-line="77" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -81,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+            <state relative-caret-position="375">
+              <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
               <folding>
                 <element signature="e#1739#1740#0" expanded="true" />
                 <element signature="e#1770#1771#0" expanded="true" />
@@ -92,9 +70,13 @@
                 <element signature="e#1922#1923#0" expanded="true" />
                 <element signature="e#1961#1962#0" expanded="true" />
                 <element signature="e#1995#1996#0" expanded="true" />
+                <element signature="e#2026#2027#0" expanded="true" />
                 <element signature="e#2053#2054#0" expanded="true" />
+                <element signature="e#2093#2094#0" expanded="true" />
                 <element signature="e#2125#2126#0" expanded="true" />
+                <element signature="e#2158#2159#0" expanded="true" />
                 <element signature="e#2190#2191#0" expanded="true" />
+                <element signature="e#2237#2238#0" expanded="true" />
                 <element signature="e#2279#2280#0" expanded="true" />
               </folding>
             </state>
@@ -103,6 +85,14 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -110,23 +100,25 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/Pokemon.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/PlayerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/Player.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/Element.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/PlayerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/PokemonTest.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1433" />
-    <option name="width" value="1077" />
-    <option name="height" value="1049" />
+    <option name="x" value="598" />
+    <option name="y" value="1" />
+    <option name="width" value="1117" />
+    <option name="height" value="1036" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -190,7 +182,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -223,24 +215,26 @@
       <option name="presentableId" value="Default" />
       <updated>1570905577362</updated>
       <workItem from="1570905579057" duration="644000" />
-      <workItem from="1570953638715" duration="8825000" />
+      <workItem from="1570953638715" duration="11199000" />
+      <workItem from="1570974007277" duration="2161000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9469000" />
+    <option name="totallyTimeSpent" value="14004000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1433" y="0" width="1077" height="1049" extended-state="0" />
+    <frame x="598" y="1" width="1117" height="1036" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23957323" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15686275" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -251,7 +245,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32934782" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3296582" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -268,10 +262,35 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/Element.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="71" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/PokemonTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+          <folding>
+            <element signature="e#253#254#0" expanded="true" />
+            <element signature="e#304#305#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/PlayerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="77" column="46" selection-start-line="77" selection-start-column="46" selection-end-line="77" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+        <state relative-caret-position="375">
+          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
           <folding>
             <element signature="e#1739#1740#0" expanded="true" />
             <element signature="e#1770#1771#0" expanded="true" />
@@ -281,61 +300,27 @@
             <element signature="e#1922#1923#0" expanded="true" />
             <element signature="e#1961#1962#0" expanded="true" />
             <element signature="e#1995#1996#0" expanded="true" />
+            <element signature="e#2026#2027#0" expanded="true" />
             <element signature="e#2053#2054#0" expanded="true" />
+            <element signature="e#2093#2094#0" expanded="true" />
             <element signature="e#2125#2126#0" expanded="true" />
+            <element signature="e#2158#2159#0" expanded="true" />
             <element signature="e#2190#2191#0" expanded="true" />
+            <element signature="e#2237#2238#0" expanded="true" />
             <element signature="e#2279#2280#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/PlayerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="45" column="40" lean-forward="true" selection-start-line="45" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/Pokemon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="75" column="16" lean-forward="true" selection-start-line="75" selection-start-column="16" selection-end-line="75" selection-end-column="19" />
+        <state relative-caret-position="436">
+          <caret line="76" column="5" lean-forward="true" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
           <folding>
-            <element signature="e#647#648#0" expanded="true" />
             <element signature="e#674#675#0" expanded="true" />
-            <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#746#747#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
-            <element signature="e#815#816#0" expanded="true" />
-            <element signature="e#866#867#0" expanded="true" />
-            <element signature="e#912#913#0" expanded="true" />
-            <element signature="e#951#952#0" expanded="true" />
-            <element signature="e#989#990#0" expanded="true" />
-            <element signature="e#1048#1049#0" expanded="true" />
-            <element signature="e#1102#1103#0" expanded="true" />
-            <element signature="e#1132#1133#0" expanded="true" />
-            <element signature="e#1161#1162#0" expanded="true" />
-            <element signature="e#1202#1203#0" expanded="true" />
-            <element signature="e#1238#1239#0" expanded="true" />
-            <element signature="e#1269#1270#0" expanded="true" />
-            <element signature="e#1299#1300#0" expanded="true" />
-            <element signature="e#1342#1343#0" expanded="true" />
-            <element signature="e#1380#1381#0" expanded="true" />
-            <element signature="e#1411#1412#0" expanded="true" />
-            <element signature="e#1441#1442#0" expanded="true" />
-            <element signature="e#1484#1485#0" expanded="true" />
-            <element signature="e#1522#1523#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/PokemonTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#253#254#0" expanded="true" />
-            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#775#776#0" expanded="true" />
           </folding>
         </state>
       </provider>

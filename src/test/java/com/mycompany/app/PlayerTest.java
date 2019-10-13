@@ -19,18 +19,18 @@ public class PlayerTest {
     }
 
     @Test
-    public void pokemonListExists(){
+    public void pokemonListExistsTest(){
         Player player = new Player();
         Assert.assertNotNull(player.pokemons);
     }
     @Test
-    public void pokemonListExistsInPlayerWithName(){
+    public void pokemonListExistsInPlayerWithNameTest(){
         Player player = new Player("John");
         Assert.assertNotNull(player.pokemons);
     }
 
     @Test
-    public void impossibleToCatchMightyPokemonByFreshPlayer(){
+    public void impossibleToCatchMightyPokemonByFreshPlayerTest(){
         Player player = new Player();
         Pokemon slaking = new Pokemon("Slaking",4431,233, 290, 166,284);
         Assert.assertEquals("Pokemon has run off!", player.catchPokemon(slaking));
@@ -40,14 +40,14 @@ public class PlayerTest {
     }
 
     @Test
-    public void playerFailToCatchPokemonDueToLackOfPokeBalls(){
-        Player player = new Player();
+    public void playerFailToCatchPokemonDueToLackOfPokeBallsTest(){
+        Player player = new Player("John");
         player.setPokeBalls(0);
         Pokemon slaking = new Pokemon("Slaking",4431,233, 290, 166,284);
         Assert.assertEquals("You out of poke balls!", player.catchPokemon(slaking));
     }
     @Test
-    public void playerSuccessInCatchingPokemon(){
+    public void playerSuccessInCatchingPokemonTest(){
         Player player = new Player();
         Pokemon wishiwashi = new Pokemon("Wishiwashi",0,0, 0, 0,0);
         Assert.assertEquals("Success!", player.catchPokemon(wishiwashi));
@@ -57,25 +57,25 @@ public class PlayerTest {
 
     }
     @Test(expected = IllegalStateException.class)
-    public void playerSelectFromEmptyPokemonList(){
+    public void playerSelectFromEmptyPokemonListTest(){
         Player player = new Player();
         player.selectPokemon("Wishiwashi");
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void playerSelectPokemonWithoutNameFromPokemonList(){
+    public void playerSelectPokemonWithoutNameFromPokemonListTest(){
         Player player = new Player();
         player.selectPokemon("");
     }                                                
     @Test(expected = NullPointerException.class)
-    public void playerSelectPokemonWhichHeDoesNotHave(){
+    public void playerSelectPokemonWhichHeDoesNotHaveTest(){
         Player player = new Player();
         Pokemon wishiwashi = new Pokemon("Wishiwashi",0,0, 0, 0,0);
         player.catchPokemon(wishiwashi);
         player.selectPokemon("Slaking");
     }
      @Test
-    public void playerSelectPokemonSuccess(){
+    public void playerSelectPokemonSuccessTest(){
         Player player = new Player();
         Pokemon wishiwashi = new Pokemon("Wishiwashi",0,0, 0, 0,0);
         player.catchPokemon(wishiwashi);
