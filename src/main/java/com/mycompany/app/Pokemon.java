@@ -7,6 +7,7 @@ public class Pokemon {
     protected int attack;
     protected int defence;
     protected int stamina;
+    protected int health;
 
     public Pokemon(){
 
@@ -19,55 +20,65 @@ public class Pokemon {
         this.attack = attack;
         this.defence = defence;
         this.stamina = stamina;
+        this.health = 100;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public int getCombatPower() {
         return combatPower;
+    }
+
+    public int getHealth() {
+        return health;
     }
 
     public void setCombatPower(int combatPower) {
         this.combatPower = combatPower;
     }
 
-    public int getMaxHealthPoints() {
-        return maxHealthPoints;
-    }
-
     public void setMaxHealthPoints(int maxHealthPoints) {
         this.maxHealthPoints = maxHealthPoints;
-    }
-
-    public int getAttack() {
-        return attack;
     }
 
     public void setAttack(int attack) {
         this.attack = attack;
     }
 
-    public int getDefence() {
-        return defence;
-    }
-
     public void setDefence(int defence) {
         this.defence = defence;
+    }
+
+    public void setStamina(int stamina) {
+        this.stamina = stamina;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    public int getMaxHealthPoints() {
+        return maxHealthPoints;
+    }
+
+
+    public int getAttack() {
+        return attack;
+    }
+
+
+    public int getDefence() {
+        return defence;
     }
 
     public int getStamina() {
         return stamina;
     }
 
-    public void setStamina(int stamina) {
-        this.stamina = stamina;
-    }
+
 
     @Override
     public String toString() {

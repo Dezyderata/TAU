@@ -12,6 +12,17 @@ import static org.mockito.Mockito.*;
 @RunWith( JUnit4.class)
 public class PlayerTest {
 
+    @Test
+    public void testCatchThreePokemonMock(){
+        Player player = new Player("Mark");
+        Pokemon pokemon = mock(Pokemon.class);
+        when(pokemon.getCombatPower()).thenReturn(0);
+        player.catchPokemon(pokemon);
+        player.catchPokemon(pokemon);
+        player.catchPokemon(pokemon);
+        verify(pokemon, times(3)).getCombatPower();
+
+    }
 
     @Test
     public void testPokeCatchWinMock(){
@@ -19,6 +30,7 @@ public class PlayerTest {
         Pokemon pokemon = mock(Pokemon.class);
         when(pokemon.getCombatPower()).thenReturn(0);
         Assert.assertEquals("Success!", player.catchPokemon(pokemon));
+        verify(pokemon, atLeastOnce()).getCombatPower();
     }
 
     @Test
@@ -27,8 +39,50 @@ public class PlayerTest {
         Pokemon pokemon = mock(Pokemon.class);
         when(pokemon.getCombatPower()).thenReturn(10000);
         Assert.assertEquals("Pokemon has run off!", player.catchPokemon(pokemon));
+        verify(pokemon, only()).getCombatPower();
+    }
+    @Test
+    public void testTrainPokemonSuccessMock(){
+        Player player = new Player("Mark");
+        Pokemon pokemon = mock(Pokemon.class);
+        when(pokemon.getName()).thenReturn("Fafik");
+        when(pokemon.getCombatPower()).thenReturn(0);
+        when(pokemon.getAttack()).thenReturn(0);
+        player.catchPokemon(pokemon);
+        Assert.assertEquals("Pokemon training success!", player.trainPokemon("Fafik"));
+        verify(pokemon, never()).getHealth();
+
+
     }
 
+    @Test
+    public void testTrainPokemonFailMock(){
+        Player player = new Player("Mark");
+        Pokemon pokemon = mock(Pokemon.class);
+        when(pokemon.getName()).thenReturn("Fafik");
+        when(pokemon.getCombatPower()).thenReturn(0);
+        when(pokemon.getHealth()).thenReturn(100);
+        when(pokemon.getAttack()).thenReturn(100000);
+        player.catchPokemon(pokemon);
+        Assert.assertEquals("Pokemon training fail!", player.trainPokemon("Fafik"));
+        verify(pokemon, atMost(2)).getHealth();
+
+    }
+
+    @Test
+    public void testTrainPokemonFailPokemonParishMock(){
+        Player player = new Player("Mark");
+        Pokemon pokemon = mock(Pokemon.class);
+        when(pokemon.getName()).thenReturn("Fafik");
+        when(pokemon.getCombatPower()).thenReturn(0);
+        when(pokemon.getHealth()).thenReturn(0);
+        when(pokemon.getAttack()).thenReturn(100000);
+        player.catchPokemon(pokemon);
+        Assert.assertEquals(1, player.getPokemons().size());
+        Assert.assertEquals("Pokemon training fail! Pokemon has died!", player.trainPokemon("Fafik"));
+        Assert.assertEquals(0, player.getPokemons().size());
+        verify(pokemon, atLeast(2)).getHealth();
+    }
 
     @Test
     public void isPlayerClassIsImplementedTest(){
