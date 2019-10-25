@@ -5,8 +5,30 @@ import org.junit.*;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
-@RunWith(JUnit4.class)
+
+import static org.mockito.Mockito.*;
+
+
+@RunWith( JUnit4.class)
 public class PlayerTest {
+
+
+    @Test
+    public void testPokeCatchWinMock(){
+        Player player = new Player("Mark");
+        Pokemon pokemon = mock(Pokemon.class);
+        when(pokemon.getCombatPower()).thenReturn(0);
+        Assert.assertEquals("Success!", player.catchPokemon(pokemon));
+    }
+
+    @Test
+    public void testPokeCatchLoseMock(){
+        Player player = new Player("Mark");
+        Pokemon pokemon = mock(Pokemon.class);
+        when(pokemon.getCombatPower()).thenReturn(10000);
+        Assert.assertEquals("Pokemon has run off!", player.catchPokemon(pokemon));
+    }
+
 
     @Test
     public void isPlayerClassIsImplementedTest(){

@@ -2,6 +2,7 @@ package com.mycompany.app;
 
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class Player {
 
@@ -9,6 +10,9 @@ public class Player {
     protected List<Pokemon> pokemons;
     protected int pokeBalls;
     protected int level;
+    protected Date joiningDate;
+
+
 
     public Player() {
         this.pokemons = new ArrayList<>();
@@ -22,7 +26,7 @@ public class Player {
         this.level = 0;
     }
     public String catchPokemon(Pokemon pokemon){
-        if(this.pokeBalls > 0){
+        if(this.getPokeBalls() > 0){
             double x = Math.random() + this.level/100;
             if(x >= (pokemon.getCombatPower()/1000)){
                 this.pokemons.add(pokemon);
@@ -83,6 +87,14 @@ public class Player {
 
     public void setPokeBalls(int pokeBalls) {
         this.pokeBalls = pokeBalls;
+    }
+
+    public Date getJoiningDate() {
+        return joiningDate;
+    }
+
+    public void setJoiningDate(Date joiningDate) {
+        this.joiningDate = joiningDate;
     }
 
 }
