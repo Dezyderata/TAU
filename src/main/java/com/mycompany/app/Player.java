@@ -9,6 +9,7 @@ public class Player {
     protected List<Pokemon> pokemons;
     protected int pokeBalls;
     protected int level;
+    protected Pokemon selectedPokemon;
 
 
     public Player() {
@@ -47,7 +48,24 @@ public class Player {
         } else {
             for (int i = 0; i < this.pokemons.size(); i++) {
                 if (this.pokemons.get(i).getName().equalsIgnoreCase(name)) {
-                    return this.pokemons.get(i);
+                    this.selectedPokemon = this.pokemons.get(i);
+                    return this.selectedPokemon;
+                }
+            }
+            throw new NullPointerException("You didn't catch this pokemon");
+        }
+    }
+    public void removePokemon(String pattern){
+        if (pattern.isEmpty()) {
+            throw new IllegalArgumentException("Name is required");
+        }
+        if (this.pokemons.isEmpty()) {
+            throw new IllegalStateException("Your pokemon list is empty!");
+        } else {
+            for (int i = 0; i < this.pokemons.size(); i++) {
+                if (this.pokemons.get(i).getName().equalsIgnoreCase(pattern)) {
+                    this.pokemons.remove(i);
+
                 }
             }
             throw new NullPointerException("You didn't catch this pokemon");
@@ -90,4 +108,7 @@ public class Player {
         this.pokeBalls = pokeBalls;
     }
 
+    public Pokemon getSelectedPokemon() {
+        return selectedPokemon;
+    }
 }
