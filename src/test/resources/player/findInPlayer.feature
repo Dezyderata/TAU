@@ -12,5 +12,3 @@ Feature: Player.selectPokemon
       |"Wishiwashi"  |"Wishiwashi"|
       |"Slaking"     |"Slaking"   |
 
-
-

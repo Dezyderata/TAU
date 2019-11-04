@@ -12,6 +12,19 @@ import static org.mockito.Mockito.*;
 @RunWith( JUnit4.class)
 public class PlayerTest {
 
+
+
+    @Test
+    public void removePokemonTest(){
+        Player player = new Player("John");
+        Pokemon slaking = new Pokemon("Slaking",0,233, 290, 166,284);
+        Pokemon  venomoth = new Pokemon("Venomoth",0,23, 27, 15,54);
+        Pokemon diglet = new Pokemon("Diglett",0,24, 29, 16,74);
+        Pokemon dugetrio = new Pokemon("Dugetrio",0,33, 20, 14,14);
+        Pokemon psyduck = new Pokemon("Psyduck",0,2, 2, 6,84);
+        Pokemon mankey = new Pokemon("Mankey",0,92, 20, 16,24);
+
+    }
     @Test
     public void testCatchThreePokemonMock(){
         Player player = new Player("Mark");
