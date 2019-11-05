@@ -1,6 +1,6 @@
 Feature: Player.selectPokemon
-  This scenario shows that it is possible to find and select pokemon by name in players list of pokemon.
-  Naturally if this pokemon was caught by the player.
+    This scenario shows that it is possible to find and select pokemon by name in players list of pokemon.
+    Naturally if this pokemon was caught by the player.
 
   @success
   Scenario Outline: Player try to select pokemon.
@@ -14,12 +14,12 @@ Feature: Player.selectPokemon
       |"Slaking"     |"Slaking"   |
 
 
-    @failure
-    Scenario Outline: Player has other pokemon, but try to select pokemon which he doesn't have.
-      Given list of Players pokemons
-      When try to select wrong pokemon <pokemon>
-      Then the answer should be: NullPointerException
+  @failure
+  Scenario Outline: Player has other pokemon, but try to select pokemon which he doesn't have.
+    Given list of Players pokemons
+    When try to select wrong pokemon <pokemon>
+    Then the answer should be: NullPointerException
 
-      Examples:
-        |pokemon       |
-        |"Psyduck"     |
+    Examples:
+      |pokemon       |
+      |"Psyduck"     |

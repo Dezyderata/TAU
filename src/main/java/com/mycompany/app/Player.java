@@ -53,16 +53,16 @@ public class Player {
             throw new NullPointerException("You didn't catch this pokemon");
         }
     }
-    public List<Pokemon> setFreePokemon(int maxCB, int minCB) throws IllegalStateException, IllegalArgumentException, NullPointerException {
-        if (minCB < 0 || maxCB < 0) {
-            throw new IllegalArgumentException("Pokemon combat power values incorrect!");
+    public List<Pokemon> setPokemonFree(int minD, int maxD) throws IllegalStateException, IllegalArgumentException, NullPointerException {
+        if ((minD < 0 || maxD < 0) || maxD < minD){
+            throw new IllegalArgumentException("Pokemon defence values incorrect!");
         }
         if (this.pokemons.isEmpty()) {
             throw new IllegalStateException("Your pokemon list is empty!");
         }
         List<Pokemon> freePokemon = new ArrayList<>();
         for (Pokemon pokemon : this.pokemons) {
-            if (pokemon.getCombatPower() > minCB && pokemon.getCombatPower() < maxCB ) {
+            if (pokemon.getDefence() > minD && pokemon.getDefence() < maxD ) {
                freePokemon.add(pokemon);
            }
         }
