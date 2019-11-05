@@ -6,8 +6,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        format = {"pretty", "html:target/cucumber"},
-        features = "classpath:player/findInPlayerFail.feature"
+        tags = "@failure",
+        features = "classpath:player/selectPokemon.feature"
+
+
 )
-public class FindInPlayerFail {
+public class SelectPokemonFailTest {
 }

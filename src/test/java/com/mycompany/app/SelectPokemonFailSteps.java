@@ -8,7 +8,7 @@ import cucumber.api.java.en.When;
 import org.junit.Assert;
 
 
-public class FindInPlayerFailSteps {
+public class SelectPokemonFailSteps {
     private Player player;
     private Pokemon wishiwashi;
     private Pokemon slaking;
@@ -30,9 +30,9 @@ public class FindInPlayerFailSteps {
         Assert.assertEquals(player.pokemons.size(), 2);
     }
     @When("^try to select wrong pokemon \"([a-zA-Z]+)\"$")
-    public void try_to_select_wrong_pokemon(String pokemon_name) throws Throwable{
+    public void try_to_select_wrong_pokemon(String pokemon) throws Throwable{
         try {
-            player.selectPokemon(pokemon_name);
+            player.selectPokemon(pokemon);
         }catch (Exception e){
             exception = e;
         }

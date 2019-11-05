@@ -45,30 +45,32 @@ public class Player {
         if (this.pokemons.isEmpty()) {
             throw new IllegalStateException("Your pokemon list is empty!");
         } else {
-            for (int i = 0; i < this.pokemons.size(); i++) {
-                if (this.pokemons.get(i).getName().equalsIgnoreCase(name)) {
-                    return this.pokemons.get(i);
+            for (Pokemon pokemon : this.pokemons) {
+                if (pokemon.getName().equalsIgnoreCase(name)) {
+                    return pokemon;
                 }
             }
             throw new NullPointerException("You didn't catch this pokemon");
         }
     }
-//    public List<Pokemon> selectPokemonByCombatPower(int maxCB, int minCB) throws IllegalStateException, IllegalArgumentException, NullPointerException {
-//        if (minCB < 0 || maxCB < 0) {
-//            throw new IllegalArgumentException("Pokemon combat power values incorrect!");
-//        }
-//        if (this.pokemons.isEmpty()) {
-//            throw new IllegalStateException("Your pokemon list is empty!");
-//        }
-//        List<Pokemon> ans = new ArrayList<>();
-//        Pokemon pok;
-//        for (int i = 0; i < this.pokemons.size(); i++) {
-//            pok =
-//            if (this.pokemons.get(i).getCombatPower()) {
-//               this.pokemons.get(i);
-//           }
-//        }
-//    }
+    public List<Pokemon> setFreePokemon(int maxCB, int minCB) throws IllegalStateException, IllegalArgumentException, NullPointerException {
+        if (minCB < 0 || maxCB < 0) {
+            throw new IllegalArgumentException("Pokemon combat power values incorrect!");
+        }
+        if (this.pokemons.isEmpty()) {
+            throw new IllegalStateException("Your pokemon list is empty!");
+        }
+        List<Pokemon> freePokemon = new ArrayList<>();
+        for (Pokemon pokemon : this.pokemons) {
+            if (pokemon.getCombatPower() > minCB && pokemon.getCombatPower() < maxCB ) {
+               freePokemon.add(pokemon);
+           }
+        }
+        for (Pokemon pokemon : freePokemon){
+            this.pokemons.remove(pokemon);
+        }
+        return freePokemon;
+    }
     public void removePokemon(String pattern){
         if (pattern.isEmpty()) {
             throw new IllegalArgumentException("Name is required");
@@ -76,9 +78,9 @@ public class Player {
         if (this.pokemons.isEmpty()) {
             throw new IllegalStateException("Your pokemon list is empty!");
         } else {
-            for (int i = 0; i < this.pokemons.size(); i++) {
-                if (this.pokemons.get(i).getName().equalsIgnoreCase(pattern)) {
-                    this.pokemons.remove(i);
+            for (Pokemon pokemon : this.pokemons) {
+                if (pokemon.getName().equalsIgnoreCase(pattern)) {
+                    this.pokemons.remove(pokemon);
 
                 }
             }

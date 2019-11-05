@@ -8,7 +8,7 @@ import cucumber.api.java.en.When;
 
 import org.junit.Assert;
 
-public class FindInPlayerSteps {
+public class SelectPokemonSuccessSteps {
     private Player player;
     private Pokemon wishiwashi;
     private Pokemon slaking;
