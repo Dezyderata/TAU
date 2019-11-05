@@ -23,3 +23,13 @@ Feature: Player.selectPokemon
     Examples:
       |pokemon       |
       |"Psyduck"     |
+
+  @empty
+  Scenario Outline: Player doesn't have pokemon and try to select one
+    Given empty pokemon list
+    When try to select pokemon <pokemon>
+    Then exception should be: IllegalStateException
+
+    Examples:
+      |pokemon       |
+      |"Psyduck"     |
