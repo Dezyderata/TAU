@@ -1,5 +1,7 @@
 package com.mycompany.app;
 
+import com.mycompany.app.domain.Player;
+import com.mycompany.app.domain.Pokemon;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -35,8 +37,8 @@ public class SetPokemonFreeWrongValuesSteps {
     }
     @Given("^pokemons own by Player$")
     public void pokemons_own_by_player() throws Throwable{
-        Assert.assertNotNull(player.pokemons);
-        Assert.assertEquals(player.pokemons.size(), 6);
+        Assert.assertNotNull(player.getPokemons());
+        Assert.assertEquals(player.getPokemons().size(), 6);
     }
     @When("^try to select pokemon with wrong defence values: (\\d+) and (\\d+)$")
     public void try_to_select_pokemon_with_wrong_defence_values(int minD, int maxD) throws Throwable{

@@ -1,6 +1,8 @@
 package com.mycompany.app;
 
 
+import com.mycompany.app.domain.Player;
+import com.mycompany.app.domain.Pokemon;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -26,8 +28,8 @@ public class SelectPokemonFailSteps {
 
     @Given("^list of Players pokemons$")
     public void list_of_Players_pokemons() throws Throwable{
-        Assert.assertNotNull(player.pokemons);
-        Assert.assertEquals(player.pokemons.size(), 2);
+        Assert.assertNotNull(player.getPokemons());
+        Assert.assertEquals(player.getPokemons().size(), 2);
     }
     @When("^try to select wrong pokemon \"([a-zA-Z]+)\"$")
     public void try_to_select_wrong_pokemon(String pokemon) throws Throwable{

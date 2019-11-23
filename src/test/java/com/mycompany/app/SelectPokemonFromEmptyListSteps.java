@@ -1,5 +1,6 @@
 package com.mycompany.app;
 
+import com.mycompany.app.domain.Player;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;

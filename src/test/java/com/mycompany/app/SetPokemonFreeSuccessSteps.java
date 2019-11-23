@@ -1,5 +1,7 @@
 package com.mycompany.app;
 
+import com.mycompany.app.domain.Player;
+import com.mycompany.app.domain.Pokemon;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -36,8 +38,8 @@ public class SetPokemonFreeSuccessSteps {
     }
     @Given("^list of pokemons own by Player$")
     public void list_of_Players_pokemons() throws Throwable{
-        Assert.assertNotNull(player.pokemons);
-        Assert.assertEquals(player.pokemons.size(), 6);
+        Assert.assertNotNull(player.getPokemons());
+        Assert.assertEquals(player.getPokemons().size(), 6);
     }
     @When("^select pokemons with defence between (\\d+) and (\\d+)$")
     public void select_pokemons_with_defence_between(int minD, int maxD) throws Throwable{

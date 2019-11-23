@@ -1,5 +1,6 @@
 package com.mycompany.app;
 
+import com.mycompany.app.domain.Pokemon;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

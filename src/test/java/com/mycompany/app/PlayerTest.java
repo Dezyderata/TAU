@@ -1,6 +1,8 @@
 package com.mycompany.app;
 
 
+import com.mycompany.app.domain.Player;
+import com.mycompany.app.domain.Pokemon;
 import org.junit.*;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
@@ -110,12 +112,12 @@ public class PlayerTest {
     @Test
     public void pokemonListExistsTest(){
         Player player = new Player();
-        Assert.assertNotNull(player.pokemons);
+        Assert.assertNotNull(player.getPokemons());
     }
     @Test
     public void pokemonListExistsInPlayerWithNameTest(){
         Player player = new Player("John");
-        Assert.assertNotNull(player.pokemons);
+        Assert.assertNotNull(player.getPokemons());
     }
 
     @Test
@@ -123,9 +125,9 @@ public class PlayerTest {
         Player player = new Player();
         Pokemon slaking = new Pokemon("Slaking",4431,233, 290, 166,284);
         Assert.assertEquals("Pokemon has run off!", player.catchPokemon(slaking));
-        Assert.assertEquals(player.pokemons.size(), 0);
-        Assert.assertEquals(player.level, 0);
-        Assert.assertEquals(player.pokeBalls, 99);
+        Assert.assertEquals(player.getPokemons().size(), 0);
+        Assert.assertEquals(player.getLevel(), 0);
+        Assert.assertEquals(player.getPokeBalls(), 99);
     }
 
     @Test
@@ -140,9 +142,9 @@ public class PlayerTest {
         Player player = new Player();
         Pokemon wishiwashi = new Pokemon("Wishiwashi",0,0, 0, 0,0);
         Assert.assertEquals("Success!", player.catchPokemon(wishiwashi));
-        Assert.assertEquals(player.pokemons.size(), 1);
-        Assert.assertEquals(player.level, 1);
-        Assert.assertEquals(player.pokeBalls, 99);
+        Assert.assertEquals(player.getPokemons().size(), 1);
+        Assert.assertEquals(player.getLevel(), 1);
+        Assert.assertEquals(player.getPokeBalls(), 99);
 
     }
     @Test(expected = IllegalStateException.class)

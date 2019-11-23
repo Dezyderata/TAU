@@ -1,7 +1,8 @@
-package com.mycompany.app;
+package com.mycompany.app.domain;
 
 import java.util.List;
 import java.util.ArrayList;
+
 
 public class Player {
 
@@ -71,23 +72,7 @@ public class Player {
         }
         return freePokemon;
     }
-    public void removePokemon(String pattern){
-        if (pattern.isEmpty()) {
-            throw new IllegalArgumentException("Name is required");
-        }
-        if (this.pokemons.isEmpty()) {
-            throw new IllegalStateException("Your pokemon list is empty!");
-        } else {
-            for (Pokemon pokemon : this.pokemons) {
-                if (pokemon.getName().equalsIgnoreCase(pattern)) {
-                    this.pokemons.remove(pokemon);
-
-                }
-            }
-            throw new NullPointerException("You didn't catch this pokemon");
-        }
-    }
-    protected String trainPokemon(String name){
+    public String trainPokemon(String name){
         Pokemon pokemon = this.selectPokemon(name);
         int index = pokemons.indexOf(pokemon);
         double x = Math.random() + this.level/100;
@@ -124,4 +109,11 @@ public class Player {
         this.pokeBalls = pokeBalls;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public int getLevel() {
+        return level;
+    }
 }

@@ -1,6 +1,7 @@
-package com.mycompany.app;
+package com.mycompany.app.domain;
 
 public class Pokemon {
+
     protected String name;
     protected int combatPower;
     protected int maxHealthPoints;
