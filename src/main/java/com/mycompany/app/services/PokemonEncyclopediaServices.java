@@ -12,6 +12,8 @@ public class PokemonEncyclopediaServices implements IPokemonEncyclopediaService 
 
     public PokemonEncyclopediaServices(){
         this.pokemonEncyclopedia = new ArrayList<>();
+        this.pokemonEncyclopedia.add(new Pokemon("Slaking",4431,233, 290, 166,284));
+        this.pokemonEncyclopedia.add(new Pokemon("Wishiwashi",0,0, 0, 0,0));
     }
     public PokemonEncyclopediaServices(ArrayList<Pokemon> pokemonEncyclopedia){
         this.pokemonEncyclopedia = pokemonEncyclopedia;
@@ -19,13 +21,12 @@ public class PokemonEncyclopediaServices implements IPokemonEncyclopediaService 
 
 
     @Override
-    public void Add(Pokemon pokemon) {
-        if(pokemonEncyclopedia.contains(pokemon)){
-            throw new IllegalStateException("This pokemon is already in PokemonEncyclopedia");
+    public int Add(Pokemon pokemon) {
+        if(this.pokemonEncyclopedia.contains(pokemon)){
+            return 0;
         }
-        else{
-            pokemonEncyclopedia.add(pokemon);
-        }
+        this.pokemonEncyclopedia.add(pokemon);
+        return 1;
 
     }
 
@@ -50,12 +51,12 @@ public class PokemonEncyclopediaServices implements IPokemonEncyclopediaService 
 
     @Override
     public void Delete(String pokemonName) {
-        if(pokemonEncyclopedia.isEmpty()){
+        if(this.pokemonEncyclopedia.isEmpty()){
             throw new IllegalArgumentException("Name is required");
         }else {
             for (Pokemon pokemon : this.pokemonEncyclopedia) {
                 if (pokemon.getName().equalsIgnoreCase(pokemonName)) {
-                    pokemonEncyclopedia.remove(pokemon);
+                    this.pokemonEncyclopedia.remove(pokemon);
                 }
             }
             throw new NullPointerException("No such pokemon in PokemonEncyclopedia");

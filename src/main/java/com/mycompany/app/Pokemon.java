@@ -12,6 +12,9 @@ public class Pokemon {
     public Pokemon(){
 
     }
+    public Pokemon(String name){
+        this.name = name;
+    }
 
     public Pokemon(String name, int combatPower, int maxHealthPoints, int attack, int defence, int stamina){
         this.name = name;
