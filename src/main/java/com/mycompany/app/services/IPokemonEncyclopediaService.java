@@ -8,6 +8,6 @@ public interface IPokemonEncyclopediaService {
     void Add(Pokemon pokemon);
     Pokemon Read(String pokemonName);
     ArrayList<Pokemon> ReadAll();
-    Pokemon Delete(String pokemonName);
+    void Delete(String pokemonName);
 
 }

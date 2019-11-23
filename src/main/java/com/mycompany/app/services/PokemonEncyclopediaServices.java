@@ -49,14 +49,13 @@ public class PokemonEncyclopediaServices implements IPokemonEncyclopediaService 
     }
 
     @Override
-    public Pokemon Delete(String pokemonName) {
+    public void Delete(String pokemonName) {
         if(pokemonEncyclopedia.isEmpty()){
             throw new IllegalArgumentException("Name is required");
         }else {
             for (Pokemon pokemon : this.pokemonEncyclopedia) {
                 if (pokemon.getName().equalsIgnoreCase(pokemonName)) {
                     pokemonEncyclopedia.remove(pokemon);
-                    return pokemon;
                 }
             }
             throw new NullPointerException("No such pokemon in PokemonEncyclopedia");
